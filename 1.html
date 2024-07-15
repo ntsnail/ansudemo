@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5 Modal Form Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#messageModal">
+    留言
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="messageModalLabel">留言表单</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Form -->
+          <form>
+            <div class="mb-3">
+              <label for="companyName" class="form-label">公司名称</label>
+              <input type="text" class="form-control" id="companyName" required>
+            </div>
+            <div class="mb-3">
+              <label for="contactPerson" class="form-label">联系人</label>
+              <input type="text" class="form-control" id="contactPerson" required>
+            </div>
+            <div class="mb-3">
+              <label for="messageContent" class="form-label">留言内容</label>
+              <textarea class="form-control" id="messageContent" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">提交</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
